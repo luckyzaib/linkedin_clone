@@ -1,0 +1,24 @@
+.header_icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    color: gray;
+    /* justify-content: baseline; */
+    margin-left: 14px;
+    
+    /* background-color: red; */
+}
+
+.header_icon:hover{
+    color: black;
+}
+/* .header_icon:focus, .header_icon:active{
+    border-bottom: 1px black solid;
+} */
+.header_icon>p{
+    margin-top: -0.1px;
+}
+.header_icon>p:active{
+    border-bottom: 1px black solid;
+}
