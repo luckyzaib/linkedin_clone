@@ -1,0 +1,39 @@
+.parent_container{
+    background-color: white;
+    border-radius: 9px;
+}
+.feed {
+    flex: 0.6;
+}
+
+.input_container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+.input_container>form{
+    flex-grow:1;
+    display: flex;
+    margin-left: 5px;
+    cursor: pointer;
+    padding: 1px;
+}
+.input_container>form>input{
+    outline: none;
+    border: 2px rgba(155, 152, 152, 0.76) solid;
+    border-radius: 50px;
+    box-shadow: none;
+    font-size: 16px;
+    flex: 1;
+    cursor: pointer;
+    padding: 10px;
+}
+.input_container>form>button{
+    display: none;
+}
+
+.input_options{
+    display: flex;
+    justify-content: space-evenly;
+}

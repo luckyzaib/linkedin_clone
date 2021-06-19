@@ -1,0 +1,31 @@
+.post_content{
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 9px;
+    padding: 8px 8px 4px 8px;
+
+}
+.post_header{
+    display: flex;
+    /* background-color: rgba(218, 158, 158, 0.479); */
+}
+.written_profile{
+    margin-left: 5px;
+}
+.written_profile>*{
+    margin: 3px;
+    font-family: sans-serif;
+    
+}
+.written_profile>p{
+    font-size: x-small;
+    color: gray;
+}
+.post_body>p{
+    margin-bottom: 5px;
+}
+.post_options{
+    /* padding: 0px 10px 10px 0px; */
+    padding: 0px;
+    display: flex;
+}
