@@ -2,6 +2,10 @@
     background-color: white;
     border-radius: 9px;
 }
+.red{
+    background-color: red;
+    color: blue;
+}
 .feed {
     flex: 0.6;
 }
