@@ -7,7 +7,7 @@ const PostOptions = ({Icon,heading}) => {
     return (
         <div className="option">
             <Icon style ={{color:"gray"}} />
-            <h4>{heading}</h4>
+            <h4 className='titles'>{heading}</h4>
 
         </div>
     )

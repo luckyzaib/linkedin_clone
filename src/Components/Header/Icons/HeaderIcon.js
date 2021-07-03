@@ -7,7 +7,7 @@ const HeaderIcon = (props) => {
         <div className="header_icon">
             {props.Icon &&<props.Icon className = 'icon'/>}
             {props.Avatar && <props.Avatar className = 'icon' src={props.image}/>}
-            <p>{props.title}</p>
+            <p className='titles'>{props.title}</p>
             
         </div>
     )

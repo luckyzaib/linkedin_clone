@@ -17,7 +17,7 @@ export function FirebaseGetAllNodeDataWithURL(nodeURL) {
     return new Promise((resolve, reject) => {
 
         try {
-            db.collection(nodeURL).onSnapshot((snapshot)=>{
+            db.collection(nodeURL).orderBy("timestamp","desc").onSnapshot((snapshot)=>{
                 resolve(snapshot)
             })
         } catch (error) {

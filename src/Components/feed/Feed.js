@@ -16,12 +16,12 @@ const Feed = () => {
     useEffect(() => {
         FirebaseGetAllNodeDataWithURL('posts')
             .then(success => {
-                console.log('it is working', success)
+                // console.log('it is working', success)
                 let data = success.docs.map((doc) => ({
                     id: doc.id,
                     data: doc.data(),
                 }))
-                console.log("Real Data", data);
+                // console.log("Real Data", data);
                 setPosts(data);
             })
             .catch(error => console.log("error"))
@@ -33,21 +33,22 @@ const Feed = () => {
         //             data: doc.data(),
         //         }))
         //     ));
-        console.log("Posts===>", posts)
-    }, [])
+        // console.log("Posts===>", posts)
+    }, [input])
     const submit = (e) => {
         e.preventDefault()
-        db.collection("posts").add({
-            name: 'Zohaib',
-            descriptio: 'test',
-            message: input,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-        });
+        if (input != "") {
+            db.collection("posts").add({
+                name: 'Zohaib',
+                description: 'ReactJS Developer',
+                message: input,
+                // photoURl: image,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            });
+            // console.log(posts)
 
-        console.log(input)
-        // console.log(posts)
-
-        // setInput("");
+            setInput("");
+        }
     }
     return (
         <div className="feed">
@@ -77,7 +78,7 @@ const Feed = () => {
             <div className="post">
 
                 {posts.map(({ id, data: { name, description, message } }) => (
-                    <Post key={id} Avatar={Avatar} name={name} desc={description} message={message} />
+                    <Post key={id} Avatar={Avatar} name={name} desc={description} message={message}/>
                 ))
                 }
                 {/* {

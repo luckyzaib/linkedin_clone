@@ -1,0 +1,38 @@
+.gadget{
+    display: flex;
+    margin: 12px 0px;
+}
+.gadget:hover{
+    cursor: pointer;
+}
+.main_container{
+    margin-left: 5px;
+}
+.name_container>h3{
+    margin: 0;
+    font-size: 14px;
+    color: #000000E6;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.name_container>h5{
+    margin: 0;
+    font-size: 12px;
+    color: #00000099;
+    margin: 5px 0px;
+}
+.main_container>button{
+    padding: 6px 16px;
+    font-size: 16px;
+    color: #00000099;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: white;
+    
+}
+.main_container>button:hover{
+    border: 2.1px solid #00000099;
+    background-color: rgb(240, 240, 240);
+    cursor: pointer;
+
+}
